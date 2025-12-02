@@ -22,7 +22,7 @@ function App() {
     <>
       <Sidebar />
       <main className='main'>
-        <Hero />
+        <Home />
         <About />
         <Resume />
         <Education />
