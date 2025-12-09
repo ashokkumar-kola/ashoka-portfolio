@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+.skills-grid {
+  display: grid;
+  gap: 12px;
+  width: 100%;
+}
+
+.skill-box {
+  background: #1b1e23;
+  padding: 18px;
+  border-radius: 10px;
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid #333;
+}
+
+/* Priority: highest-rated skill is larger by default */
+.skill-box.highlighted {
+  transform: scale(1.05);
+  border-color: gold;
+}
+
+/* Hover enlarges only one */
+.skill-box.hovered {
+  transform: scale(1.2);
+  z-index: 20;
+}
+
+/* Others shrink when one is hovered */
+.skill-box.shrunk {
+  transform: scale(0.9);
+  opacity: 0.75;
+}
+
+/* Stars */
+.stars {
+  margin-top: 6px;
+}
+
+.star {
+  font-size: 18px;
+  color: #444;
+  margin: 0 1px;
+}
+
+.star.filled {
+  color: gold;
+}

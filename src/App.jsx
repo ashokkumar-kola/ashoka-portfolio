@@ -22,18 +22,18 @@ function App() {
     <>
       <Sidebar />
       <main className='main'>
-        <Home />
-        <About />
+        {/* <Home /> */}
+        {/* <About />
         <Resume />
-        <Education />
+        <Education /> */}
         <Skills />
-        <Projects />
+        {/* <Projects />
         <Experience />
         <Certifications />
         <Achievements />
         <Blogs />
         <Testimonials />
-        <Contact />
+        <Contact /> */}
       </main>
     </>
   )
